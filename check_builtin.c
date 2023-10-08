@@ -25,7 +25,7 @@ int check_builtin(char **args)
 		shell_help();
 
 	else if (!_strcmp(args[0], "cd"))
-		shell_cd(args);
+		cd_shell(args);
 
 	else if (!_strcmp(args[0], "clear"))
 		shell_clear(args);

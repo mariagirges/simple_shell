@@ -31,7 +31,7 @@ int check_builtin(char **args);
 int execute_buitlin(char *cmd, char **args);
 void shell_help(void);
 void shell_exit(char **args);
-void shell_cd(char **args);
+void cd_shell(char **args);
 int shell_setenv(char **args);
 int shell_unsetenv(char **args);
 int shell_env(void);
