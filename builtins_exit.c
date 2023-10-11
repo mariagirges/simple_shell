@@ -9,7 +9,7 @@ void exit_shell(char **args)
 	int stat = 0;
 
 	if (args[1] != NULL)
-		stat = get_in(args[1]);
+		stat = _atoi(args[1]);
 
 	free_tokens(args);
 	free_last_input();
