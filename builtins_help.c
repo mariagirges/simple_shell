@@ -5,13 +5,13 @@
  */
 void shell_information(void)
 {
-	write("\nShell Version 1.0.0\n\n");
-	write("Usage: ./hsh\n\n");
-	write("Shell built-in commands:\n\n");
-	write("help\t\tDisplay this help information\n\n");
-	write("cd [dir]\tChange the current working directory\n\n");
-	write("env\t\tDisplay the environment variables\n\n");
-	write("setenv\t\tSet an environment variable\n\n");
-	write("unsetenv\tUnset an environment variable\n\n");
-	write("exit\t\tExit the shell\n\n");
+	_putchar("\nShell Version 1.0.0\n\n");
+	_putchar("Usage: ./hsh\n\n");
+	_putchar("Shell built-in commands:\n\n");
+	_putchar("help\t\tDisplay this help information\n\n");
+	_putchar("cd [dir]\tChange the current working directory\n\n");
+	_putchar("env\t\tDisplay the environment variables\n\n");
+	_putchar("setenv\t\tSet an environment variable\n\n");
+	_putchar("unsetenv\tUnset an environment variable\n\n");
+	_putchar("exit\t\tExit the shell\n\n");
 }
