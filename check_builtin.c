@@ -22,7 +22,7 @@ int check_builtin(char **args)
 		shell_unsetenv(args);
 
 	else if (!_strcmp(args[0], "help"))
-		shell_help();
+		shell_information();
 
 	else if (!_strcmp(args[0], "cd"))
 		cd_shell(args);
