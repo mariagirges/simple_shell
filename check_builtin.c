@@ -10,7 +10,7 @@ int check_builtin(char **args)
 		return (0);
 
 	if (!_strcmp(args[0], "exit"))
-		shell_exit(args);
+		exit_shell(args);
 
 	else if (!_strcmp(args[0], "env"))
 		shell_environ();
