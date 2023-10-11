@@ -7,10 +7,10 @@ int shell_environ(void)
 {
 	int n;
 
-	for (n = 0; env[n]; n++)
+	for (n = 0; environ[n]; n++)
 	{
 		puts(env[n]);
-		write('\n');
+		_putchar('\n');
 	}
 	return (0);
 }
