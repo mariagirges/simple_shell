@@ -9,7 +9,7 @@ int shell_environ(void)
 
 	for (n = 0; environ[n]; n++)
 	{
-		puts(env[n]);
+		puts(environ[n]);
 		_putchar('\n');
 	}
 	return (0);
