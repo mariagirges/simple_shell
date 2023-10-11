@@ -13,7 +13,7 @@ int check_builtin(char **args)
 		shell_exit(args);
 
 	else if (!_strcmp(args[0], "env"))
-		environ();
+		shell_environ();
 
 	else if (!_strcmp(args[0], "setenv"))
 		shell_setenv(args);

@@ -34,7 +34,7 @@ void shell_exit(char **args);
 void cd_shell(char **args);
 int shell_setenv(char **args);
 int shell_unsetenv(char **args);
-int environ(void);
+int shell_environ(void);
 int clear(char **args);
 /* signal_handler.c */
 void handle_sigint(int sig);
