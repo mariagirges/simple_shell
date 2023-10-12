@@ -6,7 +6,7 @@
  */
 int setenv_shell(char **args)
 {
-	char *n, *v
+	char *n, *v;
 
 	if (args[1] == NULL || args[2] == NULL)
 	{
@@ -15,7 +15,7 @@ int setenv_shell(char **args)
 	}
 	n = args[1];
 	v = args[2];
-	if (setenv(name, value, 1) != 0)
+	if (setenv(n, v, 1) != 0)
 	{
 		_puterror("setenv");
 		return (-1);
