@@ -16,10 +16,10 @@ int check_builtin(char **args)
 		shell_environ();
 
 	else if (!_strcmp(args[0], "setenv"))
-		shell_setenv(args);
+		setenv_shell(args);
 
 	else if (!_strcmp(args[0], "unsetenv"))
-		shell_unsetenv(args);
+		unsetenv_shell(args);
 
 	else if (!_strcmp(args[0], "help"))
 		shell_information();

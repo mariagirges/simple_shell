@@ -32,8 +32,8 @@ int execute_buitlin(char *cmd, char **args);
 void shell_information(void);
 void exit_shell(char **args);
 void cd_shell(char **args);
-int shell_setenv(char **args);
-int shell_unsetenv(char **args);
+int setenv_shell(char **args);
+int unsetenv_shell(char **args);
 int shell_environ(void);
 int clear(char **args);
 /* signal_handler.c */

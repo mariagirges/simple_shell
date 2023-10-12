@@ -1,10 +1,10 @@
 #include "shell.h"
 /**
- * setvalueenv - set value for shell environment
+ * setenv_shell - set value for shell environment
  * @args: array of arguments
  * Return: 0
  */
-int setenv(char **args)
+int setenv_shell(char **args)
 {
 	char *n, *v
 
@@ -24,11 +24,11 @@ int setenv(char **args)
 }
 
 /**
- * unsetenv - Remove an environment variable
+ * unsetenv_shell - Remove an environment variable
  * @args: argument of array
  * Return: 0 or -1
  */
-int unsetenv(char **args)
+int unsetenv_shell(char **args)
 {
 	char *n;
 
