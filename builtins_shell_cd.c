@@ -14,7 +14,7 @@ void cd_shell(char **args)
 		directory = _getenv("HOME");
 		if (directory == NULL)
 		{
-			_puts("cd: Not found home directory\n");
+			printstr("cd: Not found home directory\n");
 			return;
 		}
 	}

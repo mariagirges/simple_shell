@@ -25,7 +25,7 @@ void printerror(char *error)
 {
 	size_t l, numberwritten;
 	
-	l = _strlen(err);
+	l = _strlen(error);
 	numberwritten = write(STDERR_FILENO, err, l);
 
 	if (numberwritten == -1)

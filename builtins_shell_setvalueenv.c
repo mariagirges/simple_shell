@@ -10,14 +10,14 @@ int setenv_shell(char **args)
 
 	if (args[1] == NULL || args[2] == NULL)
 	{
-		_puterror("setenv VARIABLE VALUE");
+		printerror("setenv VARIABLE VALUE");
 		return (-1);
 	}
 	n = args[1];
 	v = args[2];
 	if (setenv(n, v, 1) != 0)
 	{
-		_puterror("setenv");
+		printerror("setenv");
 		return (-1);
 	}
 	return (0);
@@ -34,13 +34,13 @@ int unsetenv_shell(char **args)
 
 	if (args[1] == NULL)
 	{
-		_puterror("unsetenv VARIABLE");
+		printerror("unsetenv VARIABLE");
 		return (-1);
 	}
 	n = args[1];
 	if (unsetenv(n) != 0)
 	{
-		_puterror("unsetenv");
+		printerror("unsetenv");
 	}
 	return (0);
 }
