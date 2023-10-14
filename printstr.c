@@ -11,7 +11,7 @@ void printstr(char *str)
 
 	l = _strlen(str);
 	numberwritten = write(STDOUT_FILENO, str, l);
-	
+
 	if (numberwritten == -1)
 		perror("write");
 }
@@ -24,7 +24,7 @@ void printstr(char *str)
 void printerror(char *error)
 {
 	size_t l, numberwritten;
-	
+
 	l = _strlen(error);
 	numberwritten = write(STDERR_FILENO, error, l);
 
