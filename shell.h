@@ -51,8 +51,8 @@ void handle_sigstp(int sig);
 int exec(char **args);
 
 /* parser.c */
-char **tokenize(char *str, const char *delim);
-char **tokenize_input(char *input);
+char **tokensize(char *str, const char *delim);
+char **tokensize_input(char *input);
 
 /* get_env.c */
 char *_getenv(const char *name);
@@ -60,12 +60,12 @@ char *_getenv(const char *name);
 /* get_path.c */
 char *get_path(void);
 
-/* find_in_path.c */
-char *find_in_path(char *command);
+/* find_path.c */
+char *find_path(char *cmd);
 
 /* free.c */
 void free_error(char **argv, char *arg);
-void free_tokens(char **ptr);
+void free_token(char **ptr);
 void free_path(void);
 
 /* printstr.c */
@@ -80,7 +80,7 @@ char *_strstr(char *haystack, char *needle);
 char *_strchr(char *s, char c);
 
 /* utils_funcs2.c */
-char *_strcpy(char *, char *);
+char *_strcopy(char *, char *);
 char *_strcat(char *, const char *);
 char *_strdup(const char *);
 int _putchar(char);
