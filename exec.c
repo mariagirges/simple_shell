@@ -34,7 +34,7 @@ int exec(char **argv)
 		command_path = NULL;
 		if (argv[0][0] != '/')
 			command_path = find_in_path(argv[0]);
-		if (cmd_path == NULL)
+		if (command_path == NULL)
 			cmd_path = argv[0];
 		if (exec(command_path, argv, env) == -1)
 		{
