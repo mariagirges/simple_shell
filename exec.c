@@ -47,7 +47,7 @@ int exec(char **argv)
 	else
 		do {
 			waitpid(id, &stat, WUNTRACED);
-		while (!WIFEXITED(stat) && !WIFSIGNALED(stat));
+		while (!WIFEXITED(stat) && !WIFSIGNALED(stat))
+			return (stat);
 		}
-	return (stat);
 }
