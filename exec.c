@@ -36,7 +36,7 @@ int exec(char **argv)
 			command_path = find_in_path(argv[0]);
 		if (command_path == NULL)
 			command_path = argv[0];
-		if (exec(command_path, argv, env) == -1)
+		if (execve(command_path, argv, env) == -1)
 		{
 			printerror(argv[0]), free_tokens(argv), free_last_input();
 			exit(EXIT_FAILURE);
