@@ -47,8 +47,8 @@ void handle_sigint(int sig);
 void handle_sigquit(int sig);
 void handle_sigstp(int sig);
 
-/* execute.c */
-int execute(char **args);
+/* exec.c */
+int exec(char **args);
 
 /* parser.c */
 char **tokenize(char *str, const char *delim);
