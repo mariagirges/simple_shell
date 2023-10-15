@@ -34,8 +34,10 @@ int exec(char **argv)
 		command_path = NULL;
 		if (argv[0][0] != '/')
 			command_path = find_path(argv[0]);
+
 		if (command_path == NULL)
 			command_path = argv[0];
+
 		if (execve(command_path, argv, env) == -1)
 		{
 			printerror(argv[0]), free_token(argv), free_input();
@@ -45,8 +47,7 @@ int exec(char **argv)
 	else
 		do {
 			waitpid(id, &stat, WUNTRACED);
-		}
 		while (!WIFEXITED(stat) && !WIFSIGNALED(stat));
-}
+		}
 	return (stat);
 }
