@@ -6,7 +6,7 @@
  */
 char *find_path(char *cmd)
 {
-	struct status st;
+	struct stat st;
 	int statusret, i;
 	char buff[PATH_MAX_LENGTH], *path, *retrive, **directory;
 
@@ -25,7 +25,7 @@ char *find_path(char *cmd)
 		_memset(buff, 0, PATH_MAX_LENGTH);
 		_strcopy(buff, directory[i]);
 		_strcat(buff, cmd);
-		statusret = status(buff, &st);
+		statusret = stat(buff, &st);
 
 		if (statusret == 0 && S_ISREG(st.st_mode) && (st.st_mode & S_IXUSR))
 		{
