@@ -23,10 +23,8 @@ int exec(char **argv)
 		printerror("fork");
 		return (1);
 	}
-
 	if (id == -1)
 		printerror(argv[0]), free_token(argv), free_input();
-
 	if (id == 0)
 	{
 		env[0] = get_path();
