@@ -15,9 +15,9 @@ char *find_path(char *cmd)
 	if (!path)
 		return (NULL);
 
-	directory = tokensize(path, PATH_SPERATOR);
+	directory = tokensize(path, PATH_SEPARATOR);
 
-	if (!dir)
+	if (!directory)
 		return (NULL);
 
 	for (i = 0; directory[i]; i++)
@@ -35,7 +35,7 @@ char *find_path(char *cmd)
 			if (!retrive)
 				return (NULL);
 
-			strcopy(retrive, buff);
+			_strcopy(retrive, buff);
 			return (retrive);
 		}
 	}

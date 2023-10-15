@@ -25,7 +25,7 @@ int exec(char **argv)
 	}
 
 	if (id == -1)
-		printerror(argv[0]), free_tokens(argv), free_last_input();
+		printerror(argv[0]), free_token(argv), free_input();
 
 	if (id == 0)
 	{
@@ -33,12 +33,12 @@ int exec(char **argv)
 		env[1] = NULL;
 		command_path = NULL;
 		if (argv[0][0] != '/')
-			command_path = find_in_path(argv[0]);
+			command_path = find_path(argv[0]);
 		if (command_path == NULL)
 			command_path = argv[0];
 		if (execve(command_path, argv, env) == -1)
 		{
-			printerror(argv[0]), free_tokens(argv), free_last_input();
+			printerror(argv[0]), free_token(argv), free_input();
 			exit(EXIT_FAILURE);
 		}
 	}
