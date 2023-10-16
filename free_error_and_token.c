@@ -1,11 +1,11 @@
 #include "shell.h"
 /**
- * free_error - free error
+ * freeerror - free error
  * @argv: pointer of argument
  * @arg: pointer of argument
  * Return: void
  */
-void free_error(char **argv, char *arg)
+void freeerror(char **argv, char *arg)
 {
 	int error;
 
@@ -20,11 +20,11 @@ void free_error(char **argv, char *arg)
 }
 
 /**
- * free_token - free memory allocated
+ * freetoken - free memory allocated
  * @pointer: pointer
  * Return: void
  */
-void free_token(char **pointer)
+void freetoken(char **pointer)
 {
 	int token;
 
@@ -36,10 +36,10 @@ void free_token(char **pointer)
 }
 
 /**
- * free_path - free path
+ * freepath - free path
  * Return: void
  */
-void free_path(void)
+void freepath(void)
 {
 	if (environ != NULL)
 	{

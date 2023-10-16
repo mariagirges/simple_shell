@@ -64,9 +64,9 @@ char *get_path(void);
 char *find_path(char *cmd);
 
 /* free.c */
-void free_error(char **argv, char *arg);
-void free_token(char **pointer);
-void free_path(void);
+void freeerror(char **argv, char *arg);
+void freetoken(char **pointer);
+void freepath(void);
 
 /* printstr.c */
 void printstr(char *str);
