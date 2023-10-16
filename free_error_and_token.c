@@ -11,24 +11,24 @@ void free_error(char **argv, char *arg)
 
 	for (error = 0; argv[error]; error++)
 	{
-		free(argv[i]);
+		free(argv[error]);
 	}
 
 	free(argv);
 	free(arg);
-	exit(EXIT_FAIL);
+	exit(EXIT_FAILURE;
 }
 
 /**
  * free_token - free memory allocated
- * @ptr: pointer
+ * @pointer: pointer
  * Return: void
  */
 void free_token(char **pointer)
 {
 	int token;
 
-	for (token = 0; ptr[token]; token++)
+	for (token = 0; pointer[token]; token++)
 	{
 		free(pointer[token]);
 	}
@@ -47,7 +47,7 @@ void free_path(void)
 
 		path = 0;
 
-		while (environ[i] != NULL)
+		while (environ[path] != NULL)
 		{
 			if (_strncmp(environ[path], "PATH=", 5) == 0)
 			{
