@@ -29,7 +29,7 @@ char *find_path(char *cmd)
 
 		if (statusret == 0 && S_ISREG(st.st_mode) && (st.st_mode & S_IXUSR))
 		{
-			free_token(directory);
+			freetoken(directory);
 			retrive = malloc(sizeof(char) * (strlen(buff) + 1));
 
 			if (!retrive)

@@ -11,7 +11,7 @@ void exit_shell(char **args)
 	if (args[1] != NULL)
 		stat = _atoi(args[1]);
 
-	free_token(args);
+	freetoken(args);
 	free_input();
 	exit(stat);
 }
