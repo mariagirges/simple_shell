@@ -37,7 +37,7 @@ int exec(char **argv)
 
 		if (execve(command_path, argv, env) == -1)
 		{
-			printerror(argv[0]), free_token(argv), free_input();
+			printerror(argv[0]), freetoken(argv), free_input();
 			exit(EXIT_FAILURE);
 		}
 	}

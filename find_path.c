@@ -40,6 +40,6 @@ char *find_path(char *cmd)
 		}
 	}
 	if (statusret == -1)
-		free_token(directory);
+		freetoken(directory);
 	return (NULL);
 }
