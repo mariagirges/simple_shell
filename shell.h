@@ -54,8 +54,8 @@ int exec(char **args);
 char **tokensize(char *str, const char *delim);
 char **tokensize_input(char *input);
 
-/* get_env.c */
-char *_getenv(const char *name);
+/* get_environ.c */
+char *get_environ(const char *thename);
 
 /* get_path.c */
 char *get_path(void);
