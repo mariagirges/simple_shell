@@ -16,7 +16,7 @@ void free_error(char **argv, char *arg)
 
 	free(argv);
 	free(arg);
-	exit(EXIT_FAILURE;
+	exit(EXIT_FAILURE);
 }
 
 /**
