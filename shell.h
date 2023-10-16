@@ -33,7 +33,7 @@ void *get_in(void);
 
 /* built-in funcs */
 int check_builtin(char **args);
-int execute_buitlin(char *cmd, char **args);
+int execute_buitlin(char *command, char **args);
 void shell_information(void);
 void exit_shell(char **args);
 void cd_shell(char **args);
@@ -65,7 +65,7 @@ char *find_path(char *cmd);
 
 /* free.c */
 void free_error(char **argv, char *arg);
-void free_token(char **ptr);
+void free_token(char **pointer);
 void free_path(void);
 
 /* printstr.c */
