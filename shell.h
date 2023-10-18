@@ -21,8 +21,8 @@
 #define MAX_TOKENS 1024
 #define BUFFER_SIZE 1024
 
-/* prompt.c */
-void prompt(void);
+/* prompt_line_interpreter.c */
+void prompt_line_interpreter(void);
 
 /* get_input.c */
 char *get_input(void);
