@@ -5,6 +5,6 @@
  */
 void prompt_line_interpreter(void)
 {
-	printstring(PROMPT);
+	printstr(PROMPT);
 	fflush(stdout);
 }
