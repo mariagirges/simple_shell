@@ -23,11 +23,11 @@ void printstr(char *str)
  */
 void printerror(char *error)
 {
-	size_t l, numberwritten;
+	size_t l, nom_written;
 
 	l = _strlen(error);
 	numberwritten = write(STDERR_FILENO, error, l);
 
-	if (numberwritten == -1)
+	if (nom_written == -1)
 		perror("write");
 }
