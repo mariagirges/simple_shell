@@ -6,14 +6,14 @@
  */
 char *get_environ(const char *thename)
 {
-	char **environ;
+	char **env;
 	size_t name;
 
 	name = _strlen(thename);
 
-	for (environ = environ; *environ != NULL; environ++)
+	for (env = environ; *env != NULL; env++)
 	{
-		if (_strncmp(*environ, thename, name) == 0 && (*environ)[name] == '=')
+		if (_strncmp(*env, thename, name) == 0 && (*env)[name] == '=')
 			return (&(*environ)[name + 1]);
 	}
 	return (NULL);
